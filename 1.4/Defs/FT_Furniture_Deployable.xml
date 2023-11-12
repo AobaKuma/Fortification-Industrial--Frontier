@@ -80,14 +80,7 @@
         <graphicData>
           <texPath>Things/BarbedWire/building</texPath>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>(3.25,3.25)</drawSize>
-          <shadowData>
-            <volume>(0.75,0.25,0.75)</volume>
-            <offset>(0,0,0)</offset>
-          </shadowData>
-          <damageData>
-            <rect>(0.2,0.2,0.2,0.2)</rect>
-          </damageData>
+          <drawSize>(3.05,3.05)</drawSize>
         </graphicData>
         <costList>
             <Steel>50</Steel>
@@ -97,10 +90,10 @@
         <altitudeLayer>Building</altitudeLayer>
         <pathCost>150</pathCost>
         <passability>PassThroughOnly</passability>
-        <fillPercent>0.10</fillPercent>
+        <fillPercent>0.05</fillPercent>
         <coversFloor>false</coversFloor>
         <holdsRoof>false</holdsRoof>
-        <castEdgeShadows>false</castEdgeShadows>
+        <castEdgeShadows>true</castEdgeShadows>
         <tickerType>Never</tickerType>
         <canOverlapZones>false</canOverlapZones>
         <minifiedDef>FT_MinifiedTurret</minifiedDef>
@@ -132,6 +125,8 @@
           <ai_chillDestination>false</ai_chillDestination>
           <expandHomeArea>false</expandHomeArea>
         </building>
+        
+        <staticSunShadowHeight>0.25</staticSunShadowHeight>
         <filthLeaving>Filth_RubbleBuilding</filthLeaving>
         <rotatable>true</rotatable>
         <selectable>true</selectable>
