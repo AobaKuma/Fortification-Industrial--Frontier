@@ -1,5 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-  
+    <ThingDef ParentName="BedWithQualityBase">
+        <defName>FT_MedicBed</defName>
+        <label>field medic stretcher</label>
+        <description>A stretcher specially designed for use in battlefield first-aid. it's foldable which makes it easy to carry and depoly, it improves medical outcomes over normal beds, but not a good place to rest.</description>
+        <graphicData>
+            <texPath>Things/MedicBed/building</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(2.75,2.75)</drawSize>
+        </graphicData>
+        <uiIconPath>Things/MedicBed/icon</uiIconPath>
+        <castEdgeShadows>False</castEdgeShadows>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToBuild>2800</WorkToBuild>
+            <Mass>20</Mass>
+            <Flammability>1.0</Flammability>
+            <BedRestEffectiveness>0.5</BedRestEffectiveness>
+            <Comfort>0.80</Comfort>
+            <ImmunityGainSpeedFactor>1.10</ImmunityGainSpeedFactor>
+            <MedicalTendQualityOffset>0.20</MedicalTendQualityOffset>
+            <SurgerySuccessChanceFactor>1.1</SurgerySuccessChanceFactor>
+            <BirthRitualQualityOffset MayRequire="Ludeon.RimWorld.Biotech">4</BirthRitualQualityOffset>
+        </statBases>
+        <minifiedDef>FT_MinifiedTurret</minifiedDef>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+            <li>
+                <compClass>Fortification.CompMinifyToInventory</compClass>
+            </li>
+            <li Class="CompProperties_AffectedByFacilities">
+                <linkableFacilities>
+                    <li>VitalsMonitor</li>
+                    <li>EndTable</li>
+                    <li>Dresser</li>
+                    <li MayRequire="Ludeon.RimWorld.Ideology">SleepAccelerator</li>
+                </linkableFacilities>
+            </li>
+        </comps>
+        <size>(1,2)</size>
+        <costList>
+            <Steel>75</Steel>
+            <Cloth>40</Cloth>
+            <ComponentIndustrial>1</ComponentIndustrial>
+        </costList>
+        <building>
+            <bed_showSleeperBody>True</bed_showSleeperBody>
+            <bed_healPerDay>10</bed_healPerDay>
+            <bed_defaultMedical>true</bed_defaultMedical>
+            <buildingSizeCategory>Small</buildingSizeCategory>
+            <paintable>true</paintable>
+            <bed_caravansCanUse>true</bed_caravansCanUse>
+            <destroySound>BuildingDestroyed_Soft_Medium</destroySound>
+            <destroyShakeAmount>0</destroyShakeAmount>
+        </building>
+        <fillPercent>0.2</fillPercent>
+        <pathCost>42</pathCost>
+        <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
+        <staticSunShadowHeight>0.05</staticSunShadowHeight>
+        <researchPrerequisites>
+            <li>HospitalBed</li>
+        </researchPrerequisites>
+        <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+        <techLevel>Industrial</techLevel>
+        <uiIconScale>1</uiIconScale>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>FT_BarbedWire</defName>
+        <label>Barbed Wire</label>
+        <description>A type of steel fencing wire constructed with sharp edges or points arranged at intervals along the strands,quite light-weighted so it can be easily carry and deploy. useful in close quarter defense and base assault.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        <graphicData>
+          <texPath>Things/BarbedWire/building</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>(3.25,3.25)</drawSize>
+          <shadowData>
+            <volume>(0.75,0.25,0.75)</volume>
+            <offset>(0,0,0)</offset>
+          </shadowData>
+          <damageData>
+            <rect>(0.2,0.2,0.2,0.2)</rect>
+          </damageData>
+        </graphicData>
+        <costList>
+            <Steel>50</Steel>
+        </costList>
+        <size>(3,1)</size>
+        <blockLight>false</blockLight>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>150</pathCost>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.10</fillPercent>
+        <coversFloor>false</coversFloor>
+        <holdsRoof>false</holdsRoof>
+        <castEdgeShadows>false</castEdgeShadows>
+        <tickerType>Never</tickerType>
+        <canOverlapZones>false</canOverlapZones>
+        <minifiedDef>FT_MinifiedTurret</minifiedDef>
+        <thingCategories>
+          <li>BuildingsSecurity</li>
+        </thingCategories>
+        <researchPrerequisites>
+          <li>Smithing</li>
+        </researchPrerequisites>
+        <statBases>
+          <MaxHitPoints>300</MaxHitPoints>
+          <Beauty>-10</Beauty>
+          <Mass>20</Mass>
+          <WorkToBuild>200</WorkToBuild>
+          <Flammability>0.0</Flammability>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+            <li>
+                <compClass>Fortification.CompMinifyToInventory</compClass>
+            </li>
+        </comps>
+        <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+        <building>
+          <allowAutoroof>false</allowAutoroof>
+          <ai_chillDestination>false</ai_chillDestination>
+          <expandHomeArea>false</expandHomeArea>
+        </building>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <rotatable>true</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <designationCategory>Security</designationCategory>
+        <repairEffect>ConstructMetal</repairEffect>
+      </ThingDef>
 </Defs>
