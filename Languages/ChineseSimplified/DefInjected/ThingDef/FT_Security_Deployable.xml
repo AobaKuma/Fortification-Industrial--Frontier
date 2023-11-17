@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_GPMG.label>通用机枪</FT_GPMG.label>
+  <FT_GPMG.description>一把可以灵活适应轻、重机枪战术角色的多用途机枪，与轻机枪相比有着更加优越的火力和精度，但需要架在地上使用。</FT_GPMG.description>
+
+  <FT_Gun_GPMG.label>通用机枪</FT_Gun_GPMG.label>
+  <FT_Gun_GPMG.description>一挺能够灵活适应轻、重机机枪战术角色的多用途机枪。</FT_Gun_GPMG.description>
+
+  <FT_HeavyMachinegun.label>水冷机枪</FT_HeavyMachinegun.label>
+  <FT_HeavyMachinegun.description>安装在轮式三脚架上的水冷式重机枪。简单实用但相当地沉重，建议由两人组成的机枪小组来灵活部署及操作。</FT_HeavyMachinegun.description>
+
+
+  <!-- 准备时间较长但火力压制高 -->
+
+  <FT_Gun_HeavyMachinegun.label>水冷机枪</FT_Gun_HeavyMachinegun.label>
+  <FT_Gun_HeavyMachinegun.description>一种专为防御工事和移动火力阵地而设计的水冷式重机枪。</FT_Gun_HeavyMachinegun.description>
+
+</LanguageData>

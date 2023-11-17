@@ -75,12 +75,12 @@
         <defName>FT_BarbedWire</defName>
         <label>Barbed Wire</label>
         <description>A type of steel fencing wire constructed with sharp edges or points arranged at intervals along the strands,quite light-weighted so it can be easily carry and deploy. useful in close quarter defense and base assault.</description>
-        <thingClass>Building</thingClass>
+        <thingClass>Fortification.Building_SpikeTrap</thingClass>
         <category>Building</category>
         <graphicData>
-          <texPath>Things/BarbedWire/building</texPath>
-          <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>(3.05,3.05)</drawSize>
+            <texPath>Things/BarbedWire/building</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.05,3.05)</drawSize>
         </graphicData>
         <costList>
             <Steel>50</Steel>
@@ -88,27 +88,29 @@
         <size>(3,1)</size>
         <blockLight>false</blockLight>
         <altitudeLayer>Building</altitudeLayer>
-        <pathCost>150</pathCost>
+        <pathCost>200</pathCost>
         <passability>PassThroughOnly</passability>
         <fillPercent>0.05</fillPercent>
         <coversFloor>false</coversFloor>
         <holdsRoof>false</holdsRoof>
         <castEdgeShadows>true</castEdgeShadows>
-        <tickerType>Never</tickerType>
+        <tickerType>Normal</tickerType>
         <canOverlapZones>false</canOverlapZones>
         <minifiedDef>FT_MinifiedTurret</minifiedDef>
         <thingCategories>
-          <li>BuildingsSecurity</li>
+            <li>BuildingsSecurity</li>
         </thingCategories>
         <researchPrerequisites>
-          <li>Smithing</li>
+            <li>Smithing</li>
         </researchPrerequisites>
         <statBases>
-          <MaxHitPoints>300</MaxHitPoints>
-          <Beauty>-10</Beauty>
-          <Mass>20</Mass>
-          <WorkToBuild>200</WorkToBuild>
-          <Flammability>0.0</Flammability>
+            <TrapMeleeDamage>20</TrapMeleeDamage>
+            <TrapSpringChance>0.9</TrapSpringChance>
+            <MaxHitPoints>300</MaxHitPoints>
+            <Beauty>-10</Beauty>
+            <Mass>20</Mass>
+            <WorkToBuild>200</WorkToBuild>
+            <Flammability>0.0</Flammability>
         </statBases>
         <comps>
             <li Class="CompProperties_Usable">
@@ -121,11 +123,14 @@
         </comps>
         <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
         <building>
-          <allowAutoroof>false</allowAutoroof>
-          <ai_chillDestination>false</ai_chillDestination>
-          <expandHomeArea>false</expandHomeArea>
+            <repairable>false</repairable>
+            <allowAutoroof>false</allowAutoroof>
+            <ai_chillDestination>false</ai_chillDestination>
+            <expandHomeArea>false</expandHomeArea>
+            <isTrap>true</isTrap>
+            <trapDestroyOnSpring>false</trapDestroyOnSpring>
+            <trapDamageCategory>Sharp</trapDamageCategory>
         </building>
-        
         <staticSunShadowHeight>0.25</staticSunShadowHeight>
         <filthLeaving>Filth_RubbleBuilding</filthLeaving>
         <rotatable>true</rotatable>
@@ -134,5 +139,5 @@
         <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
         <designationCategory>Security</designationCategory>
         <repairEffect>ConstructMetal</repairEffect>
-      </ThingDef>
+    </ThingDef>
 </Defs>

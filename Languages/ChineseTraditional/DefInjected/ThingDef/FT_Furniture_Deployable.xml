@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FT_MedicBed.label>野戰急救擔架</FT_MedicBed.label>
+  <FT_MedicBed.description>一種能由人員攜帶的輕量化野戰救援平台，能有效提高應急環境下的治療質量，但很顯然睡在上面並不怎麼舒服。\n\n這個建築經過設計能快速部屬與打包能滿足快速反應的野戰與防禦需求。</FT_MedicBed.description>
+  <FT_MedicBed.comps.0.useLabel>打包 {0_label}</FT_MedicBed.comps.0.useLabel>
+
+  <FT_BarbedWire.label>鐵絲網</FT_BarbedWire.label>
+  <FT_BarbedWire.description>一種帶刺的環狀鐵絲網，能有效阻滯任何試圖穿過的東西。\n\n這個建築經過設計能快速部屬與打包能滿足快速反應的野戰與防禦需求。</FT_BarbedWire.description>
+  <FT_BarbedWire.comps.0.useLabel>打包 {0_label}</FT_BarbedWire.comps.0.useLabel>
+  <FT_BarbedWire_Blueprint.label>鐵絲網 (藍圖)</FT_BarbedWire_Blueprint.label>
+  <FT_BarbedWire_Blueprint_Install.label>鐵絲網 (藍圖)</FT_BarbedWire_Blueprint_Install.label>
+  <FT_BarbedWire_Frame.label>鐵絲網 (建造中)</FT_BarbedWire_Frame.label>
+  <FT_BarbedWire_Frame.description>一種帶刺的環狀鐵絲網，能有效阻滯任何試圖穿過的東西。\n\n這個建築經過設計能快速部屬與打包能滿足快速反應的野戰與防禦需求。</FT_BarbedWire_Frame.description>
+
+
+</LanguageData>
