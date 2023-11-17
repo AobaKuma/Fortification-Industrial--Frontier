@@ -56,7 +56,18 @@
       <ComponentIndustrial>8</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <placeWorkers Inherit="false">
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+      <li>AOBAUtilities.PlaceWorker_Emplacement</li>
+    </placeWorkers>
+    <blocksAltitudes>
+      <li>BuildingOnTop</li>
+    </blocksAltitudes>
     <building>
+      <canPlaceOverWall>false</canPlaceOverWall>
+      <isEdifice>false</isEdifice>
       <turretTopDrawSize>2.0</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_GPMG</turretGunDef>
@@ -77,11 +88,11 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-      <AccuracyTouch>0.80</AccuracyTouch>
-      <AccuracyShort>0.94</AccuracyShort>
-      <AccuracyMedium>0.85</AccuracyMedium>
-      <AccuracyLong>0.60</AccuracyLong>
-      <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+      <AccuracyTouch>0.30</AccuracyTouch>
+      <AccuracyShort>0.64</AccuracyShort>
+      <AccuracyMedium>0.75</AccuracyMedium>
+      <AccuracyLong>0.30</AccuracyLong>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
       <Mass>15</Mass>
       <Flammability>0</Flammability>
     </statBases>
