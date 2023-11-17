@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Combat Extended</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Turret -->
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_InfantryAutoCannon"]/statBases/Mass</xpath>
+					<value>
+						<Mass>45</Mass>
+						<Bulk>30</Bulk>
+					</value>
+				</li>
+				<li Class="PatchOperationRemove">
+					<xpath>Defs/ThingDef[defName="FT_InfantryAutoCannon"]/comps/li[@Class="CompProperties_Refuelable"]</xpath>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>Defs/ThingDef[defName="FT_InfantryAutoCannon"]/building/turretBurstCooldownTime</xpath>
+					<value>
+						<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+					</value>
+				</li>
+				<li Class="PatchOperationConditional">
+					<xpath>Defs/ThingDef[defName="FT_InfantryAutoCannon"]/tradeTags</xpath>
+					<nomatch Class="PatchOperationAdd">
+						<xpath>Defs/ThingDef[defName="FT_InfantryAutoCannon"]</xpath>
+						<value>
+							<tradeTags />
+						</value>
+					</nomatch>
+				</li>
+
+				<li Class="PatchOperationAdd">
+					<xpath>Defs/ThingDef[defName="FT_InfantryAutoCannon"]/tradeTags</xpath>
+					<value>
+						<li>CE_Turret</li>
+					</value>
+				</li>
+
+				<!-- Gun -->
+				<li Class="CombatExtended.PatchOperationMakeGunCECompatible">
+					<defName>FT_Gun_InfantryAutoCannon</defName>
+					<statBases>
+						<RangedWeapon_Cooldown>1.36</RangedWeapon_Cooldown>
+						<SightsEfficiency>0.8</SightsEfficiency>
+						<ShotSpread>0.08</ShotSpread>
+						<SwayFactor>1.20</SwayFactor>
+					</statBases>
+					<Properties>
+						<recoilAmount>0.85</recoilAmount>
+						<verbClass>CombatExtended.Verb_ShootCE</verbClass>
+						<hasStandardCommand>true</hasStandardCommand>
+						<defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
+						<warmupTime>1.2</warmupTime>
+						<range>62</range>
+						<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+						<burstShotCount>6</burstShotCount>
+						<soundCast>Shot_Autocannon</soundCast>
+						<soundCastTail>GunTail_Medium</soundCastTail>
+						<muzzleFlashScale>18</muzzleFlashScale>
+						<targetParams>
+							<canTargetLocations>true</canTargetLocations>
+						</targetParams>
+						<recoilPattern>Mounted</recoilPattern>
+					</Properties>
+					<AmmoUser>
+						<magazineSize>50</magazineSize>
+						<reloadTime>6.5</reloadTime>
+						<ammoSet>AmmoSet_127x108mm</ammoSet>
+					</AmmoUser>
+					<FireModes>
+						<aimedBurstShotCount>3</aimedBurstShotCount>
+						<aiUseBurstMode>false</aiUseBurstMode>
+						<noSingleShot>false</noSingleShot>
+					</FireModes>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
