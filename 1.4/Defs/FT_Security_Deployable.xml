@@ -101,10 +101,10 @@
         <verbClass>Verb_Shoot</verbClass>
         <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
         <warmupTime>1.25</warmupTime>
-        <range>42.9</range>
+        <range>29.9</range>
         <minRange>1.9</minRange>
-        <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
-        <burstShotCount>5</burstShotCount>
+        <ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+        <burstShotCount>3</burstShotCount>
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>

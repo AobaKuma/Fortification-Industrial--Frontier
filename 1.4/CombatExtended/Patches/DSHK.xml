@@ -57,7 +57,7 @@
 						<defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
 						<warmupTime>1.2</warmupTime>
 						<range>62</range>
-						<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+						<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
 						<burstShotCount>6</burstShotCount>
 						<soundCast>Shot_Autocannon</soundCast>
 						<soundCastTail>GunTail_Medium</soundCastTail>
