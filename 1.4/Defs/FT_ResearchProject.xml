@@ -3,7 +3,7 @@
 
   <ResearchProjectDef>
     <defName>FT_Deployable</defName>
-    <label>Deplyable Basis</label>
+    <label>Deployable Basis</label>
     <description>research the basis of field defence equipment designs.</description>
     <baseCost>500</baseCost>
     <techLevel>Industrial</techLevel>
