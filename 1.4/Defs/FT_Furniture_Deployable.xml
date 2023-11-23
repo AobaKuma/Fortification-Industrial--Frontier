@@ -65,6 +65,7 @@
         <staticSunShadowHeight>0.05</staticSunShadowHeight>
         <researchPrerequisites>
             <li>HospitalBed</li>
+            <li>FT_Deployable</li>
         </researchPrerequisites>
         <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
         <techLevel>Industrial</techLevel>
@@ -78,6 +79,7 @@
         <thingClass>Fortification.Building_SpikeTrap</thingClass>
         <category>Building</category>
         <graphicData>
+            <color>(155,155,130)</color>
             <texPath>Things/BarbedWire/building</texPath>
             <graphicClass>Graphic_Multi</graphicClass>
             <drawSize>(3.05,3.05)</drawSize>
@@ -101,7 +103,7 @@
             <li>BuildingsSecurity</li>
         </thingCategories>
         <researchPrerequisites>
-            <li>Smithing</li>
+            <li>FT_Deployable</li>
         </researchPrerequisites>
         <statBases>
             <TrapMeleeDamage>20</TrapMeleeDamage>
@@ -130,6 +132,71 @@
             <isTrap>true</isTrap>
             <trapDestroyOnSpring>false</trapDestroyOnSpring>
             <trapDamageCategory>Sharp</trapDamageCategory>
+        </building>
+        <staticSunShadowHeight>0.25</staticSunShadowHeight>
+        <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+        <rotatable>true</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+        <designationCategory>Security</designationCategory>
+        <repairEffect>ConstructMetal</repairEffect>
+    </ThingDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>FT_BallisticShield</defName>
+        <label>ballistic shield</label>
+        <description>A mobile ballistic shield for special task, quite light-weighted so it can be easily carry and deploy. useful in close quarter defense and base assault.</description>
+        <category>Building</category>
+        <graphicData>
+            <color>(155,155,130)</color>
+            <texPath>Things/BallisticShield/building</texPath>
+            <graphicClass>Graphic_Multi</graphicClass>
+            <drawSize>(3.05,3.05)</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>150</Steel>
+        </costList>
+        <size>(3,1)</size>
+        <blockLight>false</blockLight>
+        <altitudeLayer>Building</altitudeLayer>
+        <pathCost>200</pathCost>
+        <passability>PassThroughOnly</passability>
+        <fillPercent>0.65</fillPercent>
+        <coversFloor>false</coversFloor>
+        <holdsRoof>false</holdsRoof>
+        <castEdgeShadows>true</castEdgeShadows>
+        <tickerType>Never</tickerType>
+        <canOverlapZones>false</canOverlapZones>
+        <minifiedDef>FT_MinifiedTurret</minifiedDef>
+        <thingCategories>
+            <li>BuildingsSecurity</li>
+        </thingCategories>
+        <researchPrerequisites>
+            <li>FT_Deployable</li>
+        </researchPrerequisites>
+        <statBases>
+            <MaxHitPoints>750</MaxHitPoints>
+            <Beauty>0</Beauty>
+            <Mass>40</Mass>
+            <WorkToBuild>400</WorkToBuild>
+            <Flammability>0.0</Flammability>
+        </statBases>
+        <comps>
+            <li Class="CompProperties_Usable">
+                <useJob>TriggerObject</useJob>
+                <useLabel>Pick up {0_label}</useLabel>
+            </li>
+            <li>
+                <compClass>Fortification.CompMinifyToInventory</compClass>
+            </li>
+        </comps>
+        <pathCostIgnoreRepeat>false</pathCostIgnoreRepeat>
+        <building>
+            <repairable>true</repairable>
+            <allowAutoroof>false</allowAutoroof>
+            <ai_chillDestination>false</ai_chillDestination>
+            <expandHomeArea>false</expandHomeArea>
         </building>
         <staticSunShadowHeight>0.25</staticSunShadowHeight>
         <filthLeaving>Filth_RubbleBuilding</filthLeaving>

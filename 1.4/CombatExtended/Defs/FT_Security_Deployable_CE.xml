@@ -40,7 +40,18 @@
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <placeWorkers Inherit="false">
+      <li>PlaceWorker_TurretTop</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+      <li>AOBAUtilities.PlaceWorker_Emplacement</li>
+    </placeWorkers>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <blocksAltitudes>
+      <li>BuildingOnTop</li>
+    </blocksAltitudes>
     <building>
+      <canPlaceOverWall>false</canPlaceOverWall>
+      <isEdifice>false</isEdifice>
       <turretTopDrawSize>2.0</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_GPMG</turretGunDef>
@@ -49,6 +60,7 @@
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>GasOperation</li>
+      <li>FT_Deployable</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -157,6 +169,7 @@
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>BlowbackOperation</li>
+      <li>FT_Deployable</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -226,7 +239,7 @@
     <label>infantry autocannon</label>
     <description>An air-cooled heavy gun mounted on tripod. It's quite heavy but accurate and powerful, Necessitates a gunner for its operation and deployment.</description>
     <uiIconPath>Things/DSHK_Icon</uiIconPath>
-    <uiIconScale>1</uiIconScale>
+    <uiIconScale>1.2</uiIconScale>
     <graphicData>
       <texPath>Things/DSHK_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -262,7 +275,8 @@
     </building>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>PrecisionRifling</li>
+      <li>CE_TurretHeavyWeapons</li>
+      <li>FT_Deployable</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -404,6 +418,7 @@
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>CE_Launchers</li>
+      <li>FT_Deployable</li>
     </researchPrerequisites>
   </ThingDef>
 

@@ -2,15 +2,23 @@
 <LanguageData>
 
   <FT_MedicBed.label>野战急救担架</FT_MedicBed.label>
-  <FT_MedicBed.description>一种能由人员携带的轻量化野战救援平台，能有效提高应急环境下的治疗质量，但很显然睡在上面并不怎么舒服。 \n\n这个建筑经过设计能快速部属与打包能满足快速反应的野战与防御需求。</FT_MedicBed.description>
+  <FT_MedicBed.description>一种能由人员携带的轻量化野战救援平台，能有效提高应急环境下的治疗质量，但很显然睡在上面并不怎么舒服。 \n\n这个建筑经过设计能快速部属与回收以满足快速反应的野战与防御需求。</FT_MedicBed.description>
   <FT_MedicBed.comps.0.useLabel>打包 {0_label}</FT_MedicBed.comps.0.useLabel>
 
   <FT_BarbedWire.label>铁丝网</FT_BarbedWire.label>
-  <FT_BarbedWire.description>一种带刺的环状铁丝网，能有效阻滞任何试图穿过的东西。 \n\n这个建筑经过设计能快速部属与打包能满足快速反应的野战与防御需求。</FT_BarbedWire.description>
+  <FT_BarbedWire.description>一种带刺的环状铁丝网，能有效阻滞任何试图穿过的东西。 \n\n这个建筑经过设计能快速部属与回收以满足快速反应的野战与防御需求。</FT_BarbedWire.description>
   <FT_BarbedWire.comps.0.useLabel>打包 {0_label}</FT_BarbedWire.comps.0.useLabel>
   <FT_BarbedWire_Blueprint.label>铁丝网 (蓝图)</FT_BarbedWire_Blueprint.label>
   <FT_BarbedWire_Blueprint_Install.label>铁丝网 (蓝图)</FT_BarbedWire_Blueprint_Install.label>
   <FT_BarbedWire_Frame.label>铁丝网 (建造中)</FT_BarbedWire_Frame.label>
-  <FT_BarbedWire_Frame.description>一种带刺的环状铁丝网，能有效阻滞任何试图穿过的东西。 \n\n这个建筑经过设计能快速部属与打包能满足快速反应的野战与防御需求。</FT_BarbedWire_Frame.description>
+  <FT_BarbedWire_Frame.description>一种带刺的环状铁丝网，能有效阻滞任何试图穿过的东西。 \n\n这个建筑经过设计能快速部属与回收以满足快速反应的野战与防御需求。</FT_BarbedWire_Frame.description>
+
+  <FT_BallisticShield.label>机动防盾</FT_BallisticShield.label>
+  <FT_BallisticShield.description>倾斜放置的折叠防弹装甲板，通常被工业世界的军队用于都市巷战。 \n\n这个建筑经过设计能快速部属与回收以满足快速反应的野战与防御需求。</FT_BallisticShield.description>
+  <FT_BallisticShield.comps.0.useLabel>打包 {0_label}</FT_BallisticShield.comps.0.useLabel>
+  <FT_BallisticShield_Blueprint.label>机动防盾 (蓝图)</FT_BallisticShield_Blueprint.label>
+  <FT_BallisticShield_Blueprint.label>机动防盾 (蓝图)</FT_BallisticShield_Blueprint.label>
+  <FT_BallisticShield_Frame.label>机动防盾 (建造中)</FT_BallisticShield_Frame.label>
+  <FT_BallisticShield_Frame.description>倾斜放置的折叠防弹装甲板，通常被工业世界的军队用于都市巷战。 \n\n这个建筑经过设计能快速部属与回收以满足快速反应的野战与防御需求。</FT_BallisticShield_Frame.description>
 
 </LanguageData>

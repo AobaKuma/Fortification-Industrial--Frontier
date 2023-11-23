@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
+
+  
+
+  <!--DTM-->
   <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_GPMG</defName>
     <label>general-purpose machine gun</label>
@@ -76,6 +80,7 @@
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>BlowbackOperation</li>
+      <li>FT_Deployable</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -123,6 +128,8 @@
     </modExtensions>
   </ThingDef>
 
+
+  <!--PM1910-->
   <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_HeavyMachinegun</defName>
     <label>heavy machine gun</label>
@@ -187,6 +194,7 @@
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>GasOperation</li>
+      <li>FT_Deployable</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -235,12 +243,14 @@
     </modExtensions>
   </ThingDef>
 
+
+  <!--DshK-->
   <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_InfantryAutoCannon</defName>
     <label>infantry autocannon</label>
     <description>An air-cooled heavy gun mounted on tripod. It's quite heavy but accurate and powerful, Necessitates a gunner for its operation and deployment.</description>
     <uiIconPath>Things/DSHK_Icon</uiIconPath>
-    <uiIconScale>1</uiIconScale>
+    <uiIconScale>1.2</uiIconScale>
     <graphicData>
       <texPath>Things/DSHK_Base</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -292,6 +302,7 @@
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <researchPrerequisites>
       <li>PrecisionRifling</li>
+      <li>FT_Deployable</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -300,6 +311,7 @@
     <defName>FT_Gun_InfantryAutoCannon</defName>
     <label>infantry autocannon</label>
     <description>A portable heavy machine gun designed for anti armor and long range suppress.</description>
+    
     <graphicData>
       <texPath>Things/DSHK</texPath>
       <graphicClass>Graphic_Single</graphicClass>
