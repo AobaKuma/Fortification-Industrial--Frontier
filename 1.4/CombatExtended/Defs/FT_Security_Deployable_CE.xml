@@ -2,7 +2,7 @@
 
 <Defs>
 
-<!-- DP27 -->
+  <!-- DP27 -->
 
   <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_GPMG</defName>
@@ -28,10 +28,10 @@
       <Flammability>0.5</Flammability>
       <WorkToBuild>3300</WorkToBuild>
       <Mass>15</Mass>
-	  <Bulk>15</Bulk>
+      <Bulk>15</Bulk>
       <Beauty>-2</Beauty>
-	  <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
-	  <AimingAccuracy>1.0</AimingAccuracy>
+      <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
+      <AimingAccuracy>1.0</AimingAccuracy>
     </statBases>
     <comps>
     </comps>
@@ -61,41 +61,41 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-		<Mass>15</Mass>
-		<Flammability>0</Flammability>
-		<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
-		<SightsEfficiency>1.00</SightsEfficiency>
-		<ShotSpread>0.05</ShotSpread>
-		<SwayFactor>0.95</SwayFactor>
+      <Mass>15</Mass>
+      <Flammability>0</Flammability>
+      <RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.05</ShotSpread>
+      <SwayFactor>0.95</SwayFactor>
     </statBases>
     <verbs>
-		<li Class="CombatExtended.VerbPropertiesCE">
-            <recoilAmount>0.85</recoilAmount>
-            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
-			<warmupTime>1.25</warmupTime>
-			<range>62</range>
-			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-			<burstShotCount>6</burstShotCount>
-			<soundCast>GunShotA</soundCast>
-			<soundCastTail>GunTail_Light</soundCastTail>
-			<muzzleFlashScale>9</muzzleFlashScale>
-			<recoilPattern>Mounted</recoilPattern>
-		</li>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.85</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
+        <warmupTime>1.25</warmupTime>
+        <range>62</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
     </verbs>
     <comps>
-		<li Class="CombatExtended.CompProperties_AmmoUser">
-            <magazineSize>47</magazineSize>
-            <reloadTime>1.75</reloadTime>
-            <ammoSet>AmmoSet_762x54mmR</ammoSet>
-		</li>
-		<li Class="CombatExtended.CompProperties_FireModes">
-            <aiUseBurstMode>FALSE</aiUseBurstMode>
-            <aiAimMode>SuppressFire</aiAimMode>
-            <aimedBurstShotCount>3</aimedBurstShotCount>
-		</li>
-	</comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>47</magazineSize>
+        <reloadTime>1.75</reloadTime>
+        <ammoSet>AmmoSet_762x54mmR</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+      </li>
+    </comps>
     <modExtensions>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalsh</def>
@@ -106,8 +106,8 @@
       </li>
     </modExtensions>
   </ThingDef>
-  
-<!-- PM1910 -->
+
+  <!-- PM1910 -->
 
   <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_HeavyMachinegun</defName>
@@ -133,10 +133,10 @@
       <Flammability>0.5</Flammability>
       <WorkToBuild>5000</WorkToBuild>
       <Mass>60</Mass>
-	  <Bulk>30</Bulk>
+      <Bulk>30</Bulk>
       <Beauty>-2</Beauty>
-	  <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
-	  <AimingAccuracy>1.0</AimingAccuracy>
+      <ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
+      <AimingAccuracy>1.0</AimingAccuracy>
     </statBases>
     <costList>
       <Steel>120</Steel>
@@ -147,7 +147,7 @@
       <turretTopDrawSize>2.0</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_HeavyMachinegun</turretGunDef>
-      <turretBurstCooldownTime>0.5</turretBurstCooldownTime>
+      <turretBurstCooldownTime>0.75</turretBurstCooldownTime>
     </building>
     <comps>
     </comps>
@@ -166,42 +166,42 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-		<Mass>60</Mass>
-		<Flammability>0</Flammability>
-		<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-		<SightsEfficiency>1.00</SightsEfficiency>
-		<ShotSpread>0.01</ShotSpread>
-		<SwayFactor>1.00</SwayFactor>
+      <Mass>60</Mass>
+      <Flammability>0</Flammability>
+      <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>1.00</SwayFactor>
     </statBases>
     <verbs>
-		<li Class="CombatExtended.VerbPropertiesCE">
-            <recoilAmount>0.8</recoilAmount>
-            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-            <hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
-			<warmupTime>1</warmupTime>
-			<range>62</range>
-			<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-			<burstShotCount>10</burstShotCount>
-			<soundCast>GunShotA</soundCast>
-			<soundCastTail>GunTail_Light</soundCastTail>
-			<muzzleFlashScale>9</muzzleFlashScale>
-			<recoilPattern>Mounted</recoilPattern>
-		</li>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.8</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
+        <warmupTime>1</warmupTime>
+        <range>62</range>
+        <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+        <burstShotCount>10</burstShotCount>
+        <soundCast>GunShotA</soundCast>
+        <soundCastTail>GunTail_Light</soundCastTail>
+        <muzzleFlashScale>9</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
     </verbs>
     <comps>
-		<li Class="CombatExtended.CompProperties_AmmoUser">
-            <magazineSize>250</magazineSize>
-            <reloadTime>2.5</reloadTime>
-            <ammoSet>AmmoSet_762x54mmR</ammoSet>
-		</li>
-		<li Class="CombatExtended.CompProperties_FireModes">
-            <aiUseBurstMode>FALSE</aiUseBurstMode>
-            <aiAimMode>SuppressFire</aiAimMode>
-            <aimedBurstShotCount>5</aimedBurstShotCount>
-            <noSingleShot>true</noSingleShot>	
-		</li>
-	</comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>250</magazineSize>
+        <reloadTime>2.5</reloadTime>
+        <ammoSet>AmmoSet_762x54mmR</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>5</aimedBurstShotCount>
+        <noSingleShot>true</noSingleShot>
+      </li>
+    </comps>
     <modExtensions>
       <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
         <def>MF_StandardMuzzleFalsh</def>
@@ -212,9 +212,9 @@
       </li>
     </modExtensions>
   </ThingDef>
-  
-<!-- DSHK -->
-  
+
+  <!-- DSHK -->
+
   <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_InfantryAutoCannon</defName>
     <label>infantry autocannon</label>
@@ -238,10 +238,10 @@
       <Flammability>0.7</Flammability>
       <WorkToBuild>7500</WorkToBuild>
       <Mass>75</Mass>
-	  <Bulk>30</Bulk>
+      <Bulk>30</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
-	  <AimingAccuracy>1.0</AimingAccuracy>
+      <AimingAccuracy>1.0</AimingAccuracy>
     </statBases>
     <costList>
       <Steel>240</Steel>
@@ -252,7 +252,7 @@
       <turretTopDrawSize>2.25</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_InfantryAutoCannon</turretGunDef>
-      <turretBurstCooldownTime>1.5</turretBurstCooldownTime>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <researchPrerequisites>
@@ -269,47 +269,48 @@
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
-		<SightsEfficiency>1.00</SightsEfficiency>
-		<ShotSpread>0.08</ShotSpread>
-		<SwayFactor>1.20</SwayFactor>
-		<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
-		<Mass>60</Mass>
-		<Flammability>0</Flammability>
+      <SightsEfficiency>1.00</SightsEfficiency>
+      <ShotSpread>0.08</ShotSpread>
+      <SwayFactor>1.20</SwayFactor>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      <Mass>60</Mass>
+      <Flammability>0</Flammability>
     </statBases>
     <verbs>
-		<li Class="CombatExtended.VerbPropertiesCE">
-            <recoilAmount>1.25</recoilAmount>
-            <verbClass>CombatExtended.Verb_ShootCE</verbClass>
-			<hasStandardCommand>true</hasStandardCommand>
-			<defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
-			<warmupTime>1.2</warmupTime>
-			<range>75</range>
-			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-			<burstShotCount>6</burstShotCount>
-			<soundCast>Shot_Autocannon</soundCast>
-			<soundCastTail>GunTail_Medium</soundCastTail>
-			<muzzleFlashScale>18</muzzleFlashScale>
-			<recoilPattern>Mounted</recoilPattern>
-		</li>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>1.25</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
+        <warmupTime>1.2</warmupTime>
+        <range>75</range>
+        <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+        <burstShotCount>6</burstShotCount>
+        <soundCast>Shot_Autocannon</soundCast>
+        <soundCastTail>GunTail_Medium</soundCastTail>
+        <muzzleFlashScale>18</muzzleFlashScale>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
     </verbs>
     <comps>
-		<li Class="CombatExtended.CompProperties_AmmoUser">
-            <magazineSize>50</magazineSize>
-            <reloadTime>6.5</reloadTime>
-            <ammoSet>AmmoSet_127x108mm</ammoSet>
-		</li>
-		<li Class="CombatExtended.CompProperties_FireModes">
-            <aiUseBurstMode>FALSE</aiUseBurstMode>
-            <aiAimMode>SuppressFire</aiAimMode>
-			<aimedBurstShotCount>3</aimedBurstShotCount>
-            <noSingleShot>true</noSingleShot>	
-		</li>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>50</magazineSize>
+        <reloadTime>6.5</reloadTime>
+        <ammoSet>AmmoSet_127x108mm</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiUseBurstMode>FALSE</aiUseBurstMode>
+        <aiAimMode>SuppressFire</aiAimMode>
+        <aimedBurstShotCount>3</aimedBurstShotCount>
+        <noSingleShot>true</noSingleShot>
+      </li>
       <li Class="Fortification.CompProperties_CastFlecker">
         <fleck>DustPuff</fleck><!--生成的Fleck,參考原版-->
         <onGroundOverride>true</onGroundOverride><!--根據砲塔下方地形決定是否產生-->
         <burstAmount>10</burstAmount><!--一次射擊生成的數量-->
         <burstSway>110</burstSway><!--噴射角度的左右隨機偏移範圍-->
-        <burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0 = 與發射角度同向)-->
+        <burstAngle>180</burstAngle><!--生成偏移子彈發射方向的噴射角度(0
+        = 與發射角度同向)-->
         <fleckSizeRange>(0,1)</fleckSizeRange><!--Fleck的生成大小隨機區間-->
         <burstSpeedRange>(0.2,0.5)</burstSpeedRange><!--Fleck的飛行速度隨機區間-->
         <burstOffsetRange>(1,3)</burstOffsetRange> <!--Fleck的生成位置偏移旋轉中心點的距離區間-->
@@ -322,7 +323,7 @@
         <burstAngle>180</burstAngle>
         <fleckSizeRange>(3,5)</fleckSizeRange>
         <burstSpeedRange>(0.2,0.5)</burstSpeedRange>
-        <burstOffsetRange>(1,3)</burstOffsetRange> 
+        <burstOffsetRange>(1,3)</burstOffsetRange>
         <rangeScaleFactor>(1,0.1)</rangeScaleFactor>
       </li>
       <li Class="Fortification.CompProperties_CastFlecker">
@@ -333,7 +334,7 @@
         <burstAngle>0</burstAngle>
         <fleckSizeRange>(1,1.2)</fleckSizeRange>
         <burstSpeedRange>(-1.2,-0.7)</burstSpeedRange>
-        <burstOffsetRange>(1,3)</burstOffsetRange> 
+        <burstOffsetRange>(1,3)</burstOffsetRange>
       </li>
     </comps>
     <modExtensions>
@@ -347,5 +348,5 @@
       </li>
     </modExtensions>
   </ThingDef>
-  
+
 </Defs>
