@@ -6,7 +6,7 @@
   <FT_GPMG.comps.0.useLabel>打包 {0_label}</FT_GPMG.comps.0.useLabel>
 
   <FT_Gun_GPMG.label>通用机枪</FT_Gun_GPMG.label>
-  <FT_Gun_GPMG.description>一挺能够灵活适应轻、重机机枪战术角色的多用途机枪。 </FT_Gun_GPMG.description>
+  <FT_Gun_GPMG.description>一挺能够灵活适应轻、重机机枪战术角色的多用途机枪。</FT_Gun_GPMG.description>
 
 
   <FT_HeavyMachinegun.label>水冷机枪</FT_HeavyMachinegun.label>
@@ -14,7 +14,7 @@
   <FT_HeavyMachinegun.comps.0.useLabel>打包 {0_label}</FT_HeavyMachinegun.comps.0.useLabel>
 
   <FT_Gun_HeavyMachinegun.label>水冷机枪</FT_Gun_HeavyMachinegun.label>
-  <FT_Gun_HeavyMachinegun.description>一种专为防御工事和移动火力阵地而设计的水冷式重机枪。 </FT_Gun_HeavyMachinegun.description>
+  <FT_Gun_HeavyMachinegun.description>一种专为防御工事和移动火力阵地而设计的水冷式重机枪。</FT_Gun_HeavyMachinegun.description>
 
 
   <FT_InfantryAutoCannon.label>重型机枪</FT_InfantryAutoCannon.label>
@@ -24,4 +24,11 @@
   <FT_Gun_InfantryAutoCannon.label>重型机枪</FT_Gun_InfantryAutoCannon.label>
   <FT_Gun_InfantryAutoCannon.description>一种轻量化的大口径机枪，十分沉重但相当地精确有力。</FT_Gun_InfantryAutoCannon.description>
 
+  <FT_RecoillessRifle.label>无后座力炮</FT_RecoillessRifle.label>
+  <FT_RecoillessRifle.description>安装在三脚架上的轻量化无后座力炮。能够发射致命且精确的反坦克榴弹与破片弹，建议由一支三人组成的火力小组来灵活部署及操作。</FT_RecoillessRifle.description>
+  <FT_RecoillessRifle.comps.0.useLabel>打包 {0_label}</FT_RecoillessRifle.comps.0.useLabel>
+
+  <FT_Gun_RecoillessRifle.label>无后座力炮</FT_Gun_RecoillessRifle.label>
+  <FT_Gun_RecoillessRifle.description>安装在三脚架上的轻量化无后座力炮。</FT_Gun_RecoillessRifle.description>
+  
 </LanguageData>

@@ -2,7 +2,7 @@
 <LanguageData>
 
   <FT_GPMG.label>通用機槍</FT_GPMG.label>
-  <FT_GPMG.description>一把可以靈活適應輕、重機槍戰術角色的多用途機槍，與輕機槍相比有著更加優越的火力和精度，但需要架在地上使用</FT_GPMG.description>
+  <FT_GPMG.description>一把可以靈活適應輕、重機槍戰術角色的多用途機槍，與輕機槍相比有著更加優越的火力和精度，但需要架在地上使用。</FT_GPMG.description>
   <FT_GPMG.comps.0.useLabel>打包 {0_label}</FT_GPMG.comps.0.useLabel>
 
   <FT_Gun_GPMG.label>通用機槍</FT_Gun_GPMG.label>
@@ -24,5 +24,12 @@
   <FT_Gun_InfantryAutoCannon.label>重型機槍</FT_Gun_InfantryAutoCannon.label>
   <FT_Gun_InfantryAutoCannon.description>一種輕量化的大口徑機槍</FT_Gun_InfantryAutoCannon.description>
 
+  
+  <FT_RecoillessRifle.label>無後座力砲</FT_RecoillessRifle.label>
+  <FT_RecoillessRifle.description>安裝在三腳架上的輕量化無後座力砲。能夠發射致命且精確的反坦克榴彈與破片彈，建議由一支三人組成的火力小組來靈活部署及操作。</FT_RecoillessRifle.description>
+  <FT_RecoillessRifle.comps.0.useLabel>打包 {0_label}</FT_RecoillessRifle.comps.0.useLabel>
+
+  <FT_Gun_RecoillessRifle.label>無後座力砲</FT_Gun_RecoillessRifle.label>
+  <FT_Gun_RecoillessRifle.description>安裝在三腳架上的輕量化無後座力砲。</FT_Gun_RecoillessRifle.description>
 
 </LanguageData>

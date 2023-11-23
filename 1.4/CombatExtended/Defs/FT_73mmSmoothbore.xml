@@ -5,7 +5,7 @@
 
 	<CombatExtended.AmmoSetDef>
 		<defName>AmmoSet_FT_73mmSmoothbore</defName>
-		<label>15cm Nebelwerfer Rockets</label>
+		<label>73mm recoilless Rocket</label>
 		<ammoTypes>
 			<Ammo_FT_73mmSmoothbore_HEAT>Bullet_FT_73mmSmoothbore_HEAT</Ammo_FT_73mmSmoothbore_HEAT>
 			<Ammo_FT_73mmSmoothbore_HE>Bullet_FT_73mmSmoothbore_HE</Ammo_FT_73mmSmoothbore_HE>
@@ -35,7 +35,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="FT_73mmSmoothbore">
 		<defName>Ammo_FT_73mmSmoothbore_HEAT</defName>
-		<label>105x607mmR cannon shell (HEAT)</label>
+		<label>73mm RHEAT-9MA (HEAT)</label>
 		<graphicData>
 			<texPath>Things/Ammo/RPG/HEAT</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -50,7 +50,7 @@
 
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="FT_73mmSmoothbore">
 		<defName>Ammo_FT_73mmSmoothbore_HE</defName>
-		<label>105x607mmR cannon shell (HE)</label>
+		<label>73mm OG-9VM (HE)</label>
 		<graphicData>
 			<texPath>Things/Ammo/RPG/Frag</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -65,7 +65,7 @@
 	
 	<ThingDef Class="CombatExtended.AmmoDef" ParentName="FT_73mmSmoothbore">
 		<defName>Ammo_FT_73mmSmoothbore_Thermobaric</defName>
-		<label>105x607mmR cannon shell (Thermobaric)</label>
+		<label>73mm RTB-9MA (Thermobaric)</label>
 		<graphicData>
 			<texPath>Things/Ammo/RPG/Frag</texPath>
 			<graphicClass>Graphic_StackCount</graphicClass>
@@ -167,7 +167,7 @@
 	<!-- ==================== Recipes ========================== -->
 
 	<RecipeDef ParentName="LauncherAmmoRecipeBase">
-		<defName>MakeAmmo_73mmSmoothbore_HEAT</defName>
+		<defName>MakeAmmo_FT_73mmSmoothbore_HEAT</defName>
 		<label>make 73mm HEAT rocket x5</label>
 		<description>Craft 5 73mm HEAT rocket.</description>
 		<jobString>Making 73mm HEAT rocket.</jobString>
@@ -220,7 +220,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="LauncherAmmoRecipeBase">
-		<defName>MakeAmmo_73mmSmoothbore_HE</defName>
+		<defName>MakeAmmo_FT_73mmSmoothbore_HE</defName>
 		<label>make 73mm HE rocket x5</label>
 		<description>Craft 5 73mm HE rocket.</description>
 		<jobString>Making 73mm HE rocket.</jobString>
@@ -273,7 +273,7 @@
 	</RecipeDef>
 	
 	<RecipeDef ParentName="LauncherAmmoRecipeBase">
-		<defName>MakeAmmo_73mmSmoothbore_Thermobaric</defName>
+		<defName>MakeAmmo_FT_73mmSmoothbore_Thermobaric</defName>
 		<label>make 73mm Thermobaric rocket x5</label>
 		<description>Craft 5 73mm Thermobaric rocket.</description>
 		<jobString>Making 73mm Thermobaric rocket.</jobString>

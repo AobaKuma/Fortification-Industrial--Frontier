@@ -349,4 +349,167 @@
     </modExtensions>
   </ThingDef>
 
+  <!-- SPG9 -->
+
+  <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
+    <defName>FT_RecoillessRifle</defName>
+    <label>recoilless rifle</label>
+    <description>Tripod with Recoilless rifle mounted. A light-weighted soloution of anti armour operation, Requires reinforced barrel to refurbish its barrels after heavy use. also needs a pawn to man on it to operate.</description>
+    <uiIconPath>Things/SPG9_Icon</uiIconPath>
+    <uiIconScale>2</uiIconScale>
+    <graphicData>
+      <texPath>InfantryTurret/FT_Tripod_Deployable</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(1.2,1.2)</drawSize>
+      <drawOffset>(0,0,-0.1)</drawOffset>
+      <damageData>
+        <rect>(0.2,0.2,0.6,0.6)</rect>
+      </damageData>
+      <shadowData>
+        <volume>(0.27,0.25,0.27)</volume>
+        <offset>(0,0,0)</offset>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>375</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <WorkToBuild>9000</WorkToBuild>
+      <Mass>60</Mass>
+      <Bulk>30</Bulk>
+      <Beauty>-2</Beauty>
+      <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
+      <AimingAccuracy>1.0</AimingAccuracy>
+    </statBases>
+    <costList>
+      <Steel>150</Steel>
+      <ReinforcedBarrel>1</ReinforcedBarrel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <interactionCellOffset>(-1,0,-1)</interactionCellOffset>
+    <building>
+      <turretTopDrawSize>2.25</turretTopDrawSize>
+      <ai_combatDangerous>true</ai_combatDangerous>
+      <turretGunDef>FT_Gun_RecoillessRifle</turretGunDef>
+      <turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+    </building>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <researchPrerequisites>
+      <li>PrecisionRifling</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseWeaponTurret">
+    <defName>FT_Gun_RecoillessRifle</defName>
+    <label>recoilless rifle</label>
+    <description>A portable recoilless rifle designed to snipe the heavy-armed target in range.</description>
+    <graphicData>
+      <texPath>Things/SPG9</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2,2)</drawSize>
+    </graphicData>
+    <soundInteract>Artillery_ShellLoaded</soundInteract>
+    <statBases>
+      <SightsEfficiency>2.00</SightsEfficiency>
+      <ShotSpread>0.01</ShotSpread>
+      <SwayFactor>1.55</SwayFactor>
+      <RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+      <Mass>60</Mass>
+      <Flammability>0</Flammability>
+    </statBases>
+    <weaponTags>
+      <li>TurretGun</li>
+    </weaponTags>
+    <verbs>
+      <li Class="CombatExtended.VerbPropertiesCE">
+        <recoilAmount>0.7</recoilAmount>
+        <verbClass>CombatExtended.Verb_ShootCE</verbClass>
+        <hasStandardCommand>true</hasStandardCommand>
+        <defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
+        <warmupTime>2</warmupTime>
+        <minRange>4.9</minRange>
+        <range>68</range>
+        <soundCast>FT_CannonLaunchA</soundCast>
+        <soundCastTail>GunTail_Heavy</soundCastTail>
+        <muzzleFlashScale>20</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
+        <recoilPattern>Mounted</recoilPattern>
+      </li>
+    </verbs>
+    <comps>
+      <li Class="CombatExtended.CompProperties_AmmoUser">
+        <magazineSize>1</magazineSize>
+        <reloadTime>3.5</reloadTime>
+        <ammoSet>AmmoSet_SPG9Rocket</ammoSet>
+      </li>
+      <li Class="CombatExtended.CompProperties_FireModes">
+        <aiAimMode>AimedShot</aiAimMode>
+      </li>
+      <li Class="Fortification.CompProperties_CastPushHeat">
+        <energyPerCast>50000</energyPerCast>
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker"><!-- 後方揚塵-->
+        <fleck>DustPuffThick</fleck>
+        <burstAmount>20</burstAmount>
+        <burstSway>20</burstSway>
+        <burstAngle>180</burstAngle>
+        <fleckSizeRange>(1,8)</fleckSizeRange>
+        <burstSpeedRange>(0.5,1)</burstSpeedRange>
+        <burstOffsetRange>(4,9)</burstOffsetRange>
+        <onGroundOverride>true</onGroundOverride>
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
+        <fleck>DustPuff</fleck>
+        <burstAmount>10</burstAmount>
+        <burstSway>45</burstSway>
+        <burstAngle>0</burstAngle>
+        <fleckSizeRange>(1,3)</fleckSizeRange>
+        <burstSpeedRange>(-0.5,0.5)</burstSpeedRange>
+        <burstOffsetRange>(2,5)</burstOffsetRange> 
+        <onGroundOverride>true</onGroundOverride>
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
+        <fleck>FT_ExhaustFlame</fleck>
+        <burstAmount>10</burstAmount>
+        <burstSway>5</burstSway>
+        <burstAngle>180</burstAngle>
+        <fleckSizeRange>(1,2)</fleckSizeRange>
+        <burstSpeedRange>(2,2.5)</burstSpeedRange>
+        <burstOffsetRange>(2,2.5)</burstOffsetRange>
+        <onGroundOverride>true</onGroundOverride>			
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker"><!-- 向後噴-->
+        <fleck>FT_ExhaustFlameGlow</fleck>
+        <burstAmount>10</burstAmount>
+        <burstSway>5</burstSway>
+        <burstAngle>180</burstAngle>
+        <fleckSizeRange>(1,2)</fleckSizeRange>
+        <burstSpeedRange>(2,2.5)</burstSpeedRange>
+        <burstOffsetRange>(2,2.5)</burstOffsetRange>
+        <onGroundOverride>true</onGroundOverride>			
+      </li>
+      <li Class="Fortification.CompProperties_CastFlecker"><!-- 向前-->
+        <fleck>DustPuff</fleck>
+        <burstAmount>10</burstAmount>
+        <burstSway>5</burstSway>
+        <burstAngle>180</burstAngle>
+        <fleckSizeRange>(5,8)</fleckSizeRange>
+        <burstSpeedRange>(1,8)</burstSpeedRange>
+        <burstOffsetRange>(7,11)</burstOffsetRange>
+        <onGroundOverride>true</onGroundOverride>
+      </li>
+    </comps>
+    <modExtensions>
+      <li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+        <def>MF_StandardMuzzleFalsh</def>
+        <drawSize>(1.5,1.5)</drawSize>
+        <offsets>
+          <li>(1,0)</li>
+        </offsets>
+        <isAlternately>true</isAlternately>
+      </li>
+    </modExtensions>
+  </ThingDef>
+
 </Defs>
