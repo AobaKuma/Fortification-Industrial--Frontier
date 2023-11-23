@@ -71,7 +71,7 @@
       <turretTopDrawSize>2.0</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_GPMG</turretGunDef>
-      <turretBurstCooldownTime>4.0</turretBurstCooldownTime>
+      <turretBurstCooldownTime>1.5</turretBurstCooldownTime>
     </building>
     <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
     <researchPrerequisites>
@@ -204,7 +204,7 @@
       <AccuracyShort>0.80</AccuracyShort>
       <AccuracyMedium>0.60</AccuracyMedium>
       <AccuracyLong>0.40</AccuracyLong>
-      <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+      <RangedWeapon_Cooldown>2.6</RangedWeapon_Cooldown>
       <Mass>60</Mass>
       <Flammability>0</Flammability>
     </statBases>
@@ -270,7 +270,7 @@
       <turretTopDrawSize>2.25</turretTopDrawSize>
       <ai_combatDangerous>true</ai_combatDangerous>
       <turretGunDef>FT_Gun_InfantryAutoCannon</turretGunDef>
-      <turretBurstCooldownTime>2.6</turretBurstCooldownTime>
+      <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
     </building>
     <comps>
       <li Class="CompProperties_Refuelable">
