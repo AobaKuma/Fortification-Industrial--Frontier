@@ -53,7 +53,7 @@
     </comps>
     <costList>
       <Steel>80</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
+      <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <altitudeLayer>BuildingOnTop</altitudeLayer>
@@ -102,7 +102,7 @@
         <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
         <warmupTime>1.25</warmupTime>
         <range>24.9</range>
-        <minRange>1.9</minRange>
+        <minRange>0</minRange>
         <ticksBetweenBurstShots>6</ticksBetweenBurstShots>
         <burstShotCount>5</burstShotCount>
         <soundCast>GunShotA</soundCast>
@@ -126,7 +126,7 @@
   <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_HeavyMachinegun</defName>
     <label>heavy machine gun</label>
-    <description>A water-cooled heavy machine gun mounted on tripod. It is simple and practical but quite heavy and necessitates a gunner for its operation and deployment.</description>
+    <description>A water-cooled heavy machine gun mounted on tripod. It is simple and practical but quite heavy and necessitates a gunner for its operation and deployment. an assistant for support and ammo carrying will aid a lot.</description>
     <uiIconPath>Things/HMG_Icon</uiIconPath>
     <uiIconScale>1.2</uiIconScale>
     <graphicData>
@@ -152,7 +152,7 @@
     </statBases>
     <costList>
       <Steel>120</Steel>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentIndustrial>4</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
     <building>
@@ -211,7 +211,7 @@
     <verbs>
       <li>
         <verbClass>Verb_Shoot</verbClass>
-        <defaultProjectile>Bullet_Minigun</defaultProjectile>
+        <defaultProjectile>Bullet_MiniTurret</defaultProjectile>
         <warmupTime>5</warmupTime>
         <range>30.9</range>
         <minRange>1.9</minRange>
@@ -262,7 +262,7 @@
       <ShootingAccuracyTurret>0.99</ShootingAccuracyTurret>
     </statBases>
     <costList>
-      <Steel>240</Steel>
+      <Steel>165</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -310,7 +310,7 @@
       <AccuracyMedium>0.83</AccuracyMedium>
       <AccuracyLong>0.75</AccuracyLong>
       <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
-      <Mass>60</Mass>
+      <Mass>75</Mass>
       <Flammability>0</Flammability>
     </statBases>
     <verbs>

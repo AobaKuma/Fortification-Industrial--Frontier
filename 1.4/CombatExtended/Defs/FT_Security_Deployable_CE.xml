@@ -81,12 +81,15 @@
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
         <recoilPattern>Mounted</recoilPattern>
       </li>
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>47</magazineSize>
+        <magazineSize>60</magazineSize>
         <reloadTime>1.75</reloadTime>
         <ammoSet>AmmoSet_762x54mmR</ammoSet>
       </li>
@@ -186,12 +189,15 @@
         <soundCast>GunShotA</soundCast>
         <soundCastTail>GunTail_Light</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
         <recoilPattern>Mounted</recoilPattern>
       </li>
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>250</magazineSize>
+        <magazineSize>300</magazineSize>
         <reloadTime>2.5</reloadTime>
         <ammoSet>AmmoSet_762x54mmR</ammoSet>
       </li>
@@ -238,13 +244,13 @@
       <Flammability>0.7</Flammability>
       <WorkToBuild>7500</WorkToBuild>
       <Mass>75</Mass>
-      <Bulk>30</Bulk>
+      <Bulk>35</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
       <AimingAccuracy>1.0</AimingAccuracy>
     </statBases>
     <costList>
-      <Steel>240</Steel>
+      <Steel>165</Steel>
       <ComponentIndustrial>5</ComponentIndustrial>
     </costList>
     <interactionCellOffset>(0,0,-1)</interactionCellOffset>
@@ -289,6 +295,9 @@
         <soundCast>Shot_Autocannon</soundCast>
         <soundCastTail>GunTail_Medium</soundCastTail>
         <muzzleFlashScale>18</muzzleFlashScale>
+        <targetParams>
+          <canTargetLocations>true</canTargetLocations>
+        </targetParams>
         <recoilPattern>Mounted</recoilPattern>
       </li>
     </verbs>
@@ -353,10 +362,10 @@
 
   <ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
     <defName>FT_RecoillessRifle</defName>
-    <label>recoilless rifle</label>
-    <description>Tripod with Recoilless rifle mounted. A light-weighted soloution of anti armour operation, Requires reinforced barrel to refurbish its barrels after heavy use. also needs a pawn to man on it to operate.</description>
+    <label>recoilless gun</label>
+    <description>A light-weighted recoilless gun for mobile operation. Due to its weightness, a fireteam assist for fire support and ammo carrying will help a lot.</description>
     <uiIconPath>Things/SPG9_Icon</uiIconPath>
-    <uiIconScale>2</uiIconScale>
+    <uiIconScale>1.5</uiIconScale>
     <graphicData>
       <texPath>InfantryTurret/FT_Tripod_Deployable</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -375,7 +384,7 @@
       <Flammability>0.5</Flammability>
       <WorkToBuild>9000</WorkToBuild>
       <Mass>60</Mass>
-      <Bulk>30</Bulk>
+      <Bulk>40</Bulk>
       <Beauty>-2</Beauty>
       <ShootingAccuracyTurret>1</ShootingAccuracyTurret>
       <AimingAccuracy>1.0</AimingAccuracy>
@@ -394,14 +403,14 @@
     </building>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>PrecisionRifling</li>
+      <li>CE_Launchers</li>
     </researchPrerequisites>
   </ThingDef>
 
   <ThingDef ParentName="BaseWeaponTurret">
     <defName>FT_Gun_RecoillessRifle</defName>
-    <label>recoilless rifle</label>
-    <description>A portable recoilless rifle designed to snipe the heavy-armed target in range.</description>
+    <label>recoilless gun</label>
+    <description>A portable recoilless gun designed to snipe the heavy-armed target in range.</description>
     <graphicData>
       <texPath>Things/SPG9</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -426,8 +435,8 @@
         <hasStandardCommand>true</hasStandardCommand>
         <defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
         <warmupTime>2</warmupTime>
-        <minRange>4.9</minRange>
-        <range>68</range>
+        <minRange>6.9</minRange>
+        <range>80</range>
         <soundCast>FT_CannonLaunchA</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>20</muzzleFlashScale>
