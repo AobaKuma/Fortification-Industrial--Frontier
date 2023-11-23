@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <MakeAmmo_FT_73mmSmoothbore_HE.label>make 73mm HE rocket x5</MakeAmmo_FT_73mmSmoothbore_HE.label>
+  <MakeAmmo_FT_73mmSmoothbore_HE.description>Craft 5 73mm HE rocket.</MakeAmmo_FT_73mmSmoothbore_HE.description>
+  <MakeAmmo_FT_73mmSmoothbore_HE.jobString>Making 73mm HE rocket.</MakeAmmo_FT_73mmSmoothbore_HE.jobString>
+  
+  <MakeAmmo_FT_73mmSmoothbore_HEAT.label>make 73mm HEAT rocket x5</MakeAmmo_FT_73mmSmoothbore_HEAT.label>
+  <MakeAmmo_FT_73mmSmoothbore_HEAT.description>Craft 5 73mm HEAT rocket.</MakeAmmo_FT_73mmSmoothbore_HEAT.description>
+  <MakeAmmo_FT_73mmSmoothbore_HEAT.jobString>Making 73mm HEAT rocket.</MakeAmmo_FT_73mmSmoothbore_HEAT.jobString>
+  
+  <MakeAmmo_FT_73mmSmoothbore_Thermobaric.label>make 73mm Thermobaric rocket x5</MakeAmmo_FT_73mmSmoothbore_Thermobaric.label>
+  <MakeAmmo_FT_73mmSmoothbore_Thermobaric.description>Craft 5 73mm Thermobaric rocket.</MakeAmmo_FT_73mmSmoothbore_Thermobaric.description>
+  <MakeAmmo_FT_73mmSmoothbore_Thermobaric.jobString>Making 73mm Thermobaric rocket.</MakeAmmo_FT_73mmSmoothbore_Thermobaric.jobString>
+  
+</LanguageData>

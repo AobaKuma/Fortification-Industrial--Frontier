@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <FT_BallisticShield.label>ballistic shield</FT_BallisticShield.label>
+  <FT_BallisticShield.description>A mobile ballistic shield for special task, quite light-weighted so it can be easily carry and deploy. useful in close quarter defense and base assault.</FT_BallisticShield.description>
+  <FT_BallisticShield.comps.CompUsable.useLabel>Pick up {0_label}</FT_BallisticShield.comps.CompUsable.useLabel>
+  
+  <FT_BarbedWire.label>barbed wire</FT_BarbedWire.label>
+  <FT_BarbedWire.description>A type of steel fencing wire constructed with sharp edges or points arranged at intervals along the strands,quite light-weighted so it can be easily carry and deploy. useful in close quarter defense and base assault.</FT_BarbedWire.description>
+  <FT_BarbedWire.comps.CompUsable.useLabel>Pick up {0_label}</FT_BarbedWire.comps.CompUsable.useLabel>
+  
+  <FT_MedicBed.label>field medic stretcher</FT_MedicBed.label>
+  <FT_MedicBed.description>A stretcher specially designed for use in battlefield first-aid. it's foldable which makes it easy to carry and depoly, it improves medical outcomes over normal beds, but not a good place to rest.</FT_MedicBed.description>
+  <FT_MedicBed.comps.CompUsable.useLabel>Pick up {0_label}</FT_MedicBed.comps.CompUsable.useLabel>
+  
+</LanguageData>

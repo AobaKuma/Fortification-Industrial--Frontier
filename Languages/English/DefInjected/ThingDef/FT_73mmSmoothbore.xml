@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <Ammo_FT_73mmSmoothbore_HE.label>73mm OG-9VM (HE)</Ammo_FT_73mmSmoothbore_HE.label>
+  <Ammo_FT_73mmSmoothbore_HE.description>High-caliber recoilless rifle shells, typically used by large recoilless rifles.</Ammo_FT_73mmSmoothbore_HE.description>
+  
+  <Ammo_FT_73mmSmoothbore_HEAT.label>73mm RHEAT-9MA (HEAT)</Ammo_FT_73mmSmoothbore_HEAT.label>
+  <Ammo_FT_73mmSmoothbore_HEAT.description>High-caliber recoilless rifle shells, typically used by large recoilless rifles.</Ammo_FT_73mmSmoothbore_HEAT.description>
+  
+  <Ammo_FT_73mmSmoothbore_Thermobaric.label>73mm RTB-9MA (Thermobaric)</Ammo_FT_73mmSmoothbore_Thermobaric.label>
+  <Ammo_FT_73mmSmoothbore_Thermobaric.description>High-caliber recoilless rifle shells, typically used by large recoilless rifles.</Ammo_FT_73mmSmoothbore_Thermobaric.description>
+  
+  <Bullet_FT_73mmSmoothbore_HE.label>73mm rocket (HE)</Bullet_FT_73mmSmoothbore_HE.label>
+  
+  <Bullet_FT_73mmSmoothbore_HEAT.label>73mm rocket (HEAT)</Bullet_FT_73mmSmoothbore_HEAT.label>
+  
+  <Bullet_FT_73mmSmoothbore_Thermobaric.label>73mm rocket (Thermobaric)</Bullet_FT_73mmSmoothbore_Thermobaric.label>
+  
+</LanguageData>
