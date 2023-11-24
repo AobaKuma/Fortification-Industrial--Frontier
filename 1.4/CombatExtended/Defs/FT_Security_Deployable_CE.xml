@@ -101,7 +101,8 @@
     </verbs>
     <comps>
       <li Class="CombatExtended.CompProperties_AmmoUser">
-        <magazineSize>47</magazineSize>
+        <!--<magazineSize>47</magazineSize>--><!--DP47发，单排扁宽弹盘-->
+		<magazineSize>63</magazineSize><!--DT63发，3排高窄弹盘-->
         <reloadTime>1.75</reloadTime>
         <ammoSet>AmmoSet_762x54mmR</ammoSet>
       </li>
