@@ -471,9 +471,9 @@
       <li Class="CombatExtended.CompProperties_FireModes">
         <aiAimMode>AimedShot</aiAimMode>
       </li>
-      <li Class="Fortification.CompProperties_CastPushHeat">
+      <!-- <li Class="Fortification.CompProperties_CastPushHeat">
         <energyPerCast>50000</energyPerCast>
-      </li>
+      </li> -->
       <li Class="Fortification.CompProperties_CastFlecker"><!-- 後方揚塵-->
         <fleck>DustPuffThick</fleck>
         <burstAmount>20</burstAmount>
