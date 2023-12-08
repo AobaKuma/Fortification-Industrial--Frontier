@@ -87,6 +87,7 @@
 				<graphicData>
 					<texPath>Things/DTM_Equip</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>1.4</drawSize>
 				</graphicData>
 			</li>
 		</modExtensions>
@@ -139,6 +140,11 @@
 	<ThingDef ParentName="FT_MinifiedTurretEquippable">
 		<defName>FT_GPMG_Minified</defName>
 		<label>general-purpose machine gun</label>
+		<graphicData>
+			<texPath>Things/DTM_Equip</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.4</drawSize>
+		</graphicData>
 		<statBases>
 			<AccuracyTouch>0.30</AccuracyTouch>
 			<AccuracyShort>0.64</AccuracyShort>
@@ -161,10 +167,12 @@
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<consumeFuelPerShot>1</consumeFuelPerShot>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
 			</li>
 		</verbs>
 	</ThingDef>
-
 
 	<!--PM1910-->
 	<ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
@@ -237,7 +245,6 @@
 		</researchPrerequisites>
 	</ThingDef>
 
-	<!-- 準備時間較長但火力壓制高 -->
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_HeavyMachinegun</defName>
 		<label>heavy machine gun</label>
@@ -286,7 +293,7 @@
 	<!--DshK-->
 	<ThingDef ParentName="FT_BaseCannonBuilding_Deployable">
 		<defName>FT_InfantryAutoCannon</defName>
-		<label>infantry autocannon</label>
+		<label>infantry heavy machine gun</label>
 		<description>An air-cooled heavy gun mounted on tripod. It's quite heavy but accurate and powerful, Necessitates a gunner for its operation and deployment.</description>
 		<uiIconPath>Things/DSHK_Icon</uiIconPath>
 		<uiIconScale>1.2</uiIconScale>
@@ -349,12 +356,21 @@
 			<li>PrecisionRifling</li>
 			<li>FT_Deployable</li>
 		</researchPrerequisites>
+		<minifiedDef>FT_InfantryAutoCannon_Minified</minifiedDef>
+		<modExtensions>
+			<li Class="Fortification.MinifiedThingDeployableGraphicExt">
+				<graphicData>
+					<texPath>Things/DSHK_Equip</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<drawSize>2</drawSize>
+				</graphicData>
+			</li>
+		</modExtensions>
 	</ThingDef>
 
-	<!-- 準備時間較長但火力壓制高 -->
 	<ThingDef ParentName="BaseWeaponTurret">
 		<defName>FT_Gun_InfantryAutoCannon</defName>
-		<label>infantry autocannon</label>
+		<label>infantry heavy machine gun</label>
 		<description>A portable heavy machine gun designed for anti armor and long range suppress.</description>
 
 		<graphicData>
@@ -432,6 +448,52 @@
 				<drawSize>(1.5,1.5)</drawSize>
 				<offsets>
 					<li>(1,0)</li>
+				</offsets>
+				<isAlternately>true</isAlternately>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+	<ThingDef ParentName="FT_MinifiedTurretEquippable">
+		<defName>FT_InfantryAutoCannon_Minified</defName>
+		<label>infantry heavy machine gun</label>
+		<graphicData>
+			<texPath>Things/DSHK_Equip</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<statBases>
+			<AccuracyTouch>0.56</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.64</AccuracyMedium>
+			<AccuracyLong>0.60</AccuracyLong>
+			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+			<Mass>75</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<defaultProjectile>FTF_Bullet_DSHK</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>29.9</range>
+				<minRange>1.9</minRange>
+				<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+				<burstShotCount>3</burstShotCount>
+				<soundCast>Shot_Autocannon</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+			</li>
+		</verbs>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="IssacZhuang.MuzzleFlash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.5,0.5)</drawSize>
+				<offsets>
+					<li>(0.75,0)</li>
 				</offsets>
 				<isAlternately>true</isAlternately>
 			</li>
