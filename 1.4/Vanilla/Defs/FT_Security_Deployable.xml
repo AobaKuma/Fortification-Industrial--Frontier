@@ -167,9 +167,7 @@
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
 				<consumeFuelPerShot>1</consumeFuelPerShot>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
+				<hasStandardCommand>true</hasStandardCommand>
 			</li>
 		</verbs>
 	</ThingDef>
@@ -483,9 +481,7 @@
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
+				<hasStandardCommand>true</hasStandardCommand>
 			</li>
 		</verbs>
 		<modExtensions>
