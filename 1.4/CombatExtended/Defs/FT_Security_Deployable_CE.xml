@@ -103,9 +103,6 @@
 				<soundCast>GunShotA</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
@@ -164,9 +161,6 @@
 				<soundCast>GunShotA</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
@@ -297,9 +291,6 @@
 				<soundCast>GunShotA</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
 				<muzzleFlashScale>9</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
@@ -514,9 +505,6 @@
 				<soundCast>Shot_Autocannon</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>18</muzzleFlashScale>
-				<targetParams>
-					<canTargetLocations>true</canTargetLocations>
-				</targetParams>
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
 		</verbs>
