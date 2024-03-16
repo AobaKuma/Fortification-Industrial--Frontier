@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef>
+    <defName>FT_Deployable</defName>
+    <label>Deployable Basis</label>
+    <description>research the basis of field defence equipment designs.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>    
+    <tab>HeavyIndustry</tab>
+    <prerequisites>
+      <li>Smithing</li>
+    </prerequisites>
+    <researchViewX>2.00</researchViewX>
+    <researchViewY>4.20</researchViewY>
+    <generalRules>
+      <rulesStrings>
+        <li>subject->field fortifications</li>
+
+        <li>subject_story->discovered usefulness of portable defense in offensive combat</li>
+        <li>subject_story->summarized the training manual to operate these equipment in action</li>
+        <li>subject_story->worked for Nara Industries, helping them train task forces for riot control</li>
+
+        <li>subject_gerund->field fortifying</li>
+      </rulesStrings>
+    </generalRules>
+  </ResearchProjectDef>
+</Defs>
