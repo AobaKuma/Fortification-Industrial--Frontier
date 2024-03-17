@@ -8,6 +8,7 @@
 		<li>1.4</li>
 		<li>1.5</li>
 	</supportedVersions>
+  <modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
 		<packageId>Aoba.Fortress.Frontier</packageId>
 	<description>
     when the first shot of the war was fired. there must be a man, who fought back against our enemy at the frontier.
@@ -27,7 +28,6 @@
    </li>
   </modDependencies>
   <loadAfter>
-	  <li>vanillaexpanded.achievements</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
 	  <li>Aoba.Fortress.Industrial</li>
   </loadAfter>
