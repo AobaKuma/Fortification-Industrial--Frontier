@@ -3,13 +3,12 @@
 <ModMetaData>
 	<name>Fortification Industrial - Frontier</name>
 	<author>AobaKuma</author>
-	<url></url>
+	<modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
 	<supportedVersions>
 		<li>1.4</li>
 		<li>1.5</li>
 	</supportedVersions>
-  <modIconPath IgnoreIfNoMatchingField="True">UI/NaraLogo</modIconPath>
-		<packageId>Aoba.Fortress.Frontier</packageId>
+	<packageId>Aoba.Fortress.Frontier</packageId>
 	<description>
     when the first shot of the war was fired. there must be a man, who fought back against our enemy at the frontier.
     we may not able to know his name, but we remember his fearlessness.
