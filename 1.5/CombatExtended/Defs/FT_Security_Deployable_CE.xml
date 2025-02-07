@@ -639,7 +639,7 @@
 		<statBases>
 			<SightsEfficiency>2.00</SightsEfficiency>
 			<ShotSpread>0.01</ShotSpread>
-			<SwayFactor>1.55</SwayFactor>
+			<SwayFactor>1.35</SwayFactor>
 			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
 			<Mass>60</Mass>
 			<Flammability>0</Flammability>
@@ -653,7 +653,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_SPG9Rocket_HEAT</defaultProjectile>
-				<warmupTime>2</warmupTime>
+				<warmupTime>1</warmupTime>
 				<minRange>6.9</minRange>
 				<range>75</range>
 				<soundCast>FT_CannonLaunchA</soundCast>
@@ -668,7 +668,7 @@
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
 				<magazineSize>1</magazineSize>
-				<reloadTime>3.5</reloadTime>
+				<reloadTime>2.5</reloadTime>
 				<ammoSet>AmmoSet_SPG9Rocket</ammoSet>
 			</li>
 			<li Class="CombatExtended.CompProperties_FireModes">
