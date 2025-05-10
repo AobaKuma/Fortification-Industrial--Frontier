@@ -55,7 +55,7 @@
 			<turretTopDrawSize>2.0</turretTopDrawSize>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>FT_Gun_GPMG</turretGunDef>
-			<turretBurstCooldownTime>0.75</turretBurstCooldownTime>
+			<turretBurstCooldownTime>0.14</turretBurstCooldownTime>
 		</building>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -85,7 +85,7 @@
 		<statBases>
 			<Mass>15</Mass>
 			<Flammability>0</Flammability>
-			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.14</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.05</ShotSpread>
 			<SwayFactor>0.95</SwayFactor>
@@ -142,6 +142,7 @@
 		</graphicData>
 		<statBases>
 			<Mass>15</Mass>
+			<Bulk>15</Bulk>
 			<Flammability>0</Flammability>
 			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.00</SightsEfficiency>
@@ -251,7 +252,7 @@
 			<turretTopDrawSize>2.0</turretTopDrawSize>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>FT_Gun_HeavyMachinegun</turretGunDef>
-			<turretBurstCooldownTime>0.75</turretBurstCooldownTime>
+			<turretBurstCooldownTime>0.14</turretBurstCooldownTime>
 		</building>
 		<comps>
 		</comps>
@@ -273,7 +274,7 @@
 		<statBases>
 			<Mass>60</Mass>
 			<Flammability>0</Flammability>
-			<RangedWeapon_Cooldown>0.75</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.14</RangedWeapon_Cooldown>
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.01</ShotSpread>
 			<SwayFactor>1.00</SwayFactor>
@@ -358,7 +359,7 @@
 			<turretTopDrawSize>2.25</turretTopDrawSize>
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>FT_Gun_InfantryAutoCannon</turretGunDef>
-			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretBurstCooldownTime>0.1</turretBurstCooldownTime>
 		</building>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -389,7 +390,7 @@
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.08</ShotSpread>
 			<SwayFactor>1.20</SwayFactor>
-			<RangedWeapon_Cooldown>1.0</RangedWeapon_Cooldown>
+			<RangedWeapon_Cooldown>0.1</RangedWeapon_Cooldown>
 			<Mass>60</Mass>
 			<Flammability>0</Flammability>
 		</statBases>
@@ -503,6 +504,7 @@
 		<statBases>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<Mass>75</Mass>
+			<Bulk>35</Bulk>
 			<Flammability>0</Flammability>
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.05</ShotSpread>
@@ -769,6 +771,7 @@
 		<statBases>
 			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
 			<Mass>75</Mass>
+			<Bulk>40</Bulk>
 			<Flammability>0</Flammability>
 			<SightsEfficiency>1.00</SightsEfficiency>
 			<ShotSpread>0.05</ShotSpread>
