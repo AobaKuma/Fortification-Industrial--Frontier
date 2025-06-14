@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  
+  <FT_Gun_GPMG.label>Degtyaryov Machine Gun</FT_Gun_GPMG.label>
+  <FT_Gun_GPMG.description>An air-cooled machine gun that can be flexibly adapted to various tactical roles for light and medium machine guns.</FT_Gun_GPMG.description>
+  <FT_Gun_GPMG.verbs.Verb_ShootCE.label>DP27/T</FT_Gun_GPMG.verbs.Verb_ShootCE.label>  
+  
+  <FT_GPMG.label>DP-28/T</FT_GPMG.label>
+  <FT_GPMG.description>An air-cooled machine gun that can be flexibly adapted to various tactical roles for light and medium machine guns, it offers superior firepower and accuracy compared to a light machine gun but requires deployment.</FT_GPMG.description>
+  <FT_GPMG.comps.CompUsable.useLabel>Pick up {0_label}</FT_GPMG.comps.CompUsable.useLabel>
+  
+  
+  <FT_Gun_HeavyMachinegun.label>Pulyemyot Maksima 1910</FT_Gun_HeavyMachinegun.label>
+  <FT_Gun_HeavyMachinegun.description>A portable heavy machine gun designed for fortification and mobile fire position.</FT_Gun_HeavyMachinegun.description>
+  <FT_Gun_HeavyMachinegun.verbs.Verb_ShootCE.label>PM M1910</FT_Gun_HeavyMachinegun.verbs.Verb_ShootCE.label>
+
+  <FT_HeavyMachinegun.label>PM M1910</FT_HeavyMachinegun.label>
+  <FT_HeavyMachinegun.description>A water-cooled heavy machine gun mounted on tripod. It is simple and practical but quite heavy and necessitates a gunner for its operation and deployment.</FT_HeavyMachinegun.description>
+  <FT_HeavyMachinegun.comps.CompUsable.useLabel>Pick up {0_label}</FT_HeavyMachinegun.comps.CompUsable.useLabel>
+
+  
+  <FT_Gun_InfantryAutoCannon.label>Degtyaryov-Shpagin large-calibre</FT_Gun_InfantryAutoCannon.label>
+  <FT_Gun_InfantryAutoCannon.description>A portable heavy machine gun designed for anti armor and long range suppress.</FT_Gun_InfantryAutoCannon.description>
+  <FT_Gun_InfantryAutoCannon.verbs.Verb_ShootCE.label>DShK 1938</FT_Gun_InfantryAutoCannon.verbs.Verb_ShootCE.label>
+
+  <FT_InfantryAutoCannon.label>DShK 1938</FT_InfantryAutoCannon.label>
+  <FT_InfantryAutoCannon.description>An air-cooled heavy gun mounted on tripod. It's quite heavy but accurate and powerful, Necessitates a gunner for its operation and deployment.</FT_InfantryAutoCannon.description>
+  <FT_InfantryAutoCannon.comps.CompUsable.useLabel>Pick up {0_label}</FT_InfantryAutoCannon.comps.CompUsable.useLabel>
+  
+
+  <FT_Gun_RecoillessRifle.label>Heavy Antitank Grenade Launcher</FT_Gun_RecoillessRifle.label>
+  <FT_Gun_RecoillessRifle.description>A portable recoilless gun designed to snipe the heavy-armed target in range.</FT_Gun_RecoillessRifle.description>
+  <FT_Gun_RecoillessRifle.verbs.Verb_ShootCE.label>SPG-9 Spear</FT_Gun_RecoillessRifle.verbs.Verb_ShootCE.label>
+ 
+  <FT_RecoillessRifle.label>SPG-9 Spear</FT_RecoillessRifle.label>
+  <FT_RecoillessRifle.description>A light-weighted recoilless gun for mobile operation. Due to its weightness, a fireteam assist for fire support and ammo carrying will help a lot.</FT_RecoillessRifle.description>
+  <FT_RecoillessRifle.comps.CompUsable.useLabel>Pick up {0_label}</FT_RecoillessRifle.comps.CompUsable.useLabel>
+  
+</LanguageData>

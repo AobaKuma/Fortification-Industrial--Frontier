@@ -13,4 +13,10 @@
 		<li IfModActive="CETeam.CombatExtended">1.5/CombatExtended</li>
 		<li IfModNotActive="CETeam.CombatExtended">1.5/Vanilla</li>
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+		<li IfModActive="CETeam.CombatExtended">1.6/CombatExtended</li>
+		<li IfModNotActive="CETeam.CombatExtended">1.6/Vanilla</li>
+	</v1.6>
 </loadFolders>
