@@ -10,7 +10,7 @@
   <FT_BarbedWire.comps.CompUsable.useLabel>Pick up {0_label}</FT_BarbedWire.comps.CompUsable.useLabel>
   
   <FT_MedicBed.label>field medic stretcher</FT_MedicBed.label>
-  <FT_MedicBed.description>A stretcher specially designed for use in battlefield first-aid. it's foldable which makes it easy to carry and depoly, it improves medical outcomes over normal beds, but not a good place to rest.</FT_MedicBed.description>
+  <FT_MedicBed.description>A stretcher specially designed for use in battlefield first-aid. it's foldable which makes it easy to carry and deploy, it improves medical outcomes over normal beds, but not a good place to rest.</FT_MedicBed.description>
   <FT_MedicBed.comps.CompUsable.useLabel>Pick up {0_label}</FT_MedicBed.comps.CompUsable.useLabel>
   
 </LanguageData>

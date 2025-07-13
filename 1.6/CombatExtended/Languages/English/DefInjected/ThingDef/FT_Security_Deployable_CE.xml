@@ -33,7 +33,7 @@
   <FT_Gun_RecoillessRifle.verbs.Verb_ShootCE.label>SPG-9 Spear</FT_Gun_RecoillessRifle.verbs.Verb_ShootCE.label>
  
   <FT_RecoillessRifle.label>SPG-9 Spear</FT_RecoillessRifle.label>
-  <FT_RecoillessRifle.description>A light-weighted recoilless gun for mobile operation. Due to its weightness, a fireteam assist for fire support and ammo carrying will help a lot.</FT_RecoillessRifle.description>
+  <FT_RecoillessRifle.description>A light-weighted recoilless gun for mobile operation. Due to its weightiness, a fireteam assist for fire support and ammo carrying will help a lot.</FT_RecoillessRifle.description>
   <FT_RecoillessRifle.comps.CompUsable.useLabel>Pick up {0_label}</FT_RecoillessRifle.comps.CompUsable.useLabel>
   
 </LanguageData>

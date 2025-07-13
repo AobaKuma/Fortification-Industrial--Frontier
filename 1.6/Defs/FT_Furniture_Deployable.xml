@@ -4,7 +4,7 @@
     <ThingDef ParentName="BedWithQualityBase">
         <defName>FT_MedicBed</defName>
         <label>field medic stretcher</label>
-        <description>A stretcher specially designed for use in battlefield first-aid. it's foldable which makes it easy to carry and depoly, it improves medical outcomes over normal beds, but not a good place to rest.</description>
+        <description>A stretcher specially designed for use in battlefield first-aid. it's foldable which makes it easy to carry and deploy, it improves medical outcomes over normal beds, but not a good place to rest.</description>
         <graphicData>
             <texPath>Things/MedicBed/building</texPath>
             <graphicClass>Graphic_Multi</graphicClass>

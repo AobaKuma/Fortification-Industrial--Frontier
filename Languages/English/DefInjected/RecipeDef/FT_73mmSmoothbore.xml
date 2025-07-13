@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
   
-  <MakeAmmo_FT_73mmSmoothbore_HE.label>make 73mm HE rocket x5</MakeAmmo_FT_73mmSmoothbore_HE.label>
-  <MakeAmmo_FT_73mmSmoothbore_HE.description>Craft 5 73mm HE rocket.</MakeAmmo_FT_73mmSmoothbore_HE.description>
-  <MakeAmmo_FT_73mmSmoothbore_HE.jobString>Making 73mm HE rocket.</MakeAmmo_FT_73mmSmoothbore_HE.jobString>
+  <MakeAmmo_FT_73mmSmoothbore_HE.label>make 73mm HE rockets x5</MakeAmmo_FT_73mmSmoothbore_HE.label>
+  <MakeAmmo_FT_73mmSmoothbore_HE.description>Craft 5 73mm HE rockets.</MakeAmmo_FT_73mmSmoothbore_HE.description>
+  <MakeAmmo_FT_73mmSmoothbore_HE.jobString>Making 73mm HE rockets.</MakeAmmo_FT_73mmSmoothbore_HE.jobString>
   
   <MakeAmmo_FT_73mmSmoothbore_HEAT.label>make 73mm HEAT rocket x5</MakeAmmo_FT_73mmSmoothbore_HEAT.label>
   <MakeAmmo_FT_73mmSmoothbore_HEAT.description>Craft 5 73mm HEAT rocket.</MakeAmmo_FT_73mmSmoothbore_HEAT.description>
