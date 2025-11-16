@@ -33,8 +33,6 @@
 			<ShootingAccuracyTurret>1.0</ShootingAccuracyTurret>
 			<AimingAccuracy>1.0</AimingAccuracy>
 		</statBases>
-		<comps>
-		</comps>
 		<costList>
 			<Steel>80</Steel>
 			<ComponentIndustrial>5</ComponentIndustrial>
@@ -56,6 +54,7 @@
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>FT_Gun_GPMG</turretGunDef>
 			<turretBurstCooldownTime>0.14</turretBurstCooldownTime>
+			<turretBurstWarmupTime>0.63</turretBurstWarmupTime>
 		</building>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -63,7 +62,17 @@
 			<li>FT_Deployable</li>
 		</researchPrerequisites>
 		<minifiedDef>FT_GPMG_Minified</minifiedDef>
-		<modExtensions>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1.75</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
 			<li Class="Fortified.MinifiedThingDeployableGraphicExt">
 				<graphicData>
 					<texPath>Things/DTM_Equip</texPath>
@@ -96,7 +105,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
-				<warmupTime>1.25</warmupTime>
+				<warmupTime>0.63</warmupTime>
 				<range>62</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>6</burstShotCount>
@@ -253,9 +262,20 @@
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>FT_Gun_HeavyMachinegun</turretGunDef>
 			<turretBurstCooldownTime>0.14</turretBurstCooldownTime>
+			<turretBurstWarmupTime>0.5</turretBurstWarmupTime>
 		</building>
 		<comps>
-		</comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1.25</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
+		</modExtensions>
 		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
 		<researchPrerequisites>
 			<li>BlowbackOperation</li>
@@ -285,7 +305,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_762x54mmR_FMJ</defaultProjectile>
-				<warmupTime>1</warmupTime>
+				<warmupTime>0.5</warmupTime>
 				<range>62</range>
 				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
 				<burstShotCount>10</burstShotCount>
@@ -360,6 +380,7 @@
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>FT_Gun_InfantryAutoCannon</turretGunDef>
 			<turretBurstCooldownTime>0.1</turretBurstCooldownTime>
+			<turretBurstWarmupTime>0.6</turretBurstWarmupTime>
 		</building>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -367,7 +388,17 @@
 			<li>FT_Deployable</li>
 		</researchPrerequisites>
 		<minifiedDef>FT_InfantryAutoCannon_Minified</minifiedDef>
-		<modExtensions>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1.333</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
 			<li Class="Fortified.MinifiedThingDeployableGraphicExt">
 				<graphicData>
 					<texPath>Things/DSHK_Equip</texPath>
@@ -400,7 +431,7 @@
 				<verbClass>CombatExtended.Verb_ShootCE</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
-				<warmupTime>1.2</warmupTime>
+				<warmupTime>0.6</warmupTime>
 				<range>75</range>
 				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
 				<burstShotCount>6</burstShotCount>
@@ -409,21 +440,6 @@
 				<muzzleFlashScale>18</muzzleFlashScale>
 				<recoilPattern>Mounted</recoilPattern>
 			</li>
-			<!--防空数值补偿：瞄准时间降至0.01，后座力75%，射程全图，删除最小射程-->
-			<!--<li Class="CombatExtended.VerbProperties_CIWSSkyfaller">
-				<verbClass>CombatExtended.VerbCIWSSkyfaller</verbClass>
-				<recoilAmount>0.93</recoilAmount>
-				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>Bullet_127x108mm_FMJ</defaultProjectile>
-				<warmupTime>0.01</warmupTime>
-				<range>1000</range>
-				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
-				<burstShotCount>6</burstShotCount>
-				<soundCast>Shot_Autocannon</soundCast>
-				<soundCastTail>GunTail_Medium</soundCastTail>
-				<muzzleFlashScale>18</muzzleFlashScale>
-				<recoilPattern>Mounted</recoilPattern>
-			</li>-->
 		</verbs>
 		<comps>
 			<li Class="CombatExtended.CompProperties_AmmoUser">
@@ -625,6 +641,7 @@
 			<ai_combatDangerous>true</ai_combatDangerous>
 			<turretGunDef>FT_Gun_RecoillessRifle</turretGunDef>
 			<turretBurstCooldownTime>1.0</turretBurstCooldownTime>
+			<turretBurstWarmupTime>1</turretBurstWarmupTime>
 		</building>
 		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
 		<researchPrerequisites>
@@ -632,7 +649,17 @@
 			<li>FT_Deployable</li>
 		</researchPrerequisites>
 		<minifiedDef>FT_RecoillessRifle_Minified</minifiedDef>
-		<modExtensions>
+		<comps>
+			<li Class="CombatExtended.CompProperties_FireArc">
+				<spanRange>10~360</spanRange>
+				<maxSpanDeviation>180</maxSpanDeviation>
+			</li>
+        </comps>
+        <modExtensions>
+			<li Class="CombatExtended.NonSnapTurretExtension">
+				<speed>1.083</speed>
+				<angleWeightMultiplier>2</angleWeightMultiplier>
+			</li>
 			<li Class="Fortified.MinifiedThingDeployableGraphicExt">
 				<graphicData>
 					<texPath>Things/SPG9_Equip</texPath>
